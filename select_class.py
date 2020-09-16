@@ -18,13 +18,13 @@ def query_class(cf, could_not_get_table, info_all=True):
 		0表示函数还可继续循环运行，否则返回1
 	'''
 	# 服务器ip地址
-	# host_url = 'http://10.3.255.31'
+	# host_url = 'http://10.3.255.3x'
 	host_url = cf.get('script', 'host_url')
 	url = host_url + '/Lesson/PlanCourseOnlineSel.aspx'
 
 	#请求头信息，注意Cookie使用你登录时的cookie，详见README.md，User-Agent的值一般不用动
 	cookie = cf.get('script', 'cookie')
-	# head={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Cookie': 'ASP.NET_SessionId=axzk13npn2ujcfufgeyycepw; DropDownListYx_xsbh=391000; DropDownListXqu='}
+	# head={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Cookie': 'ASP.NET_SessionId=xxxxxxxxxxxxxxxx; DropDownListYx_xsbh=xxxxxx; DropDownListXqu='}
 	head={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Cookie': cookie}
 	# 向url发送GET请求
 	html = requests.get(url, headers=head)
