@@ -1,5 +1,5 @@
 # 2020SelectClassScript
-选课脚本
+选课脚本（一晚上将两门英语课都选上）
 
 ## 运行命令
 ```shell
