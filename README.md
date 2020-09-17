@@ -15,6 +15,7 @@ python select_class.py
    ![](img/1.png)
 
    则在config.ini中的cookie字段填写为：```cookie = ASP.NET_SessionId=xxxxxxxxxxxxxxxxxxxx; DropDownListYx_xsbh=xxxxxx; DropDownListXqu=```
+   你的浏览器cookie是什么就在这个字段填什么，不一定是我举例的格式。
 
 3. 想选的课程的名称列表，python的列表写法，python文件获取到值后会将字符串转成列表，如desired_class_names=['软件确保']
 
